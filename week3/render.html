@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/beijing.js"></script>
+
+</head>
+<body>
+    <div id="4fa471963e2d401283859111fe9c4678" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_4fa471963e2d401283859111fe9c4678 = echarts.init(
+            document.getElementById('4fa471963e2d401283859111fe9c4678'), 'white', {renderer: 'canvas'});
+        var option_4fa471963e2d401283859111fe9c4678 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [],
+    "legend": [
+        {
+            "data": [],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u60c5\u7eea\u5206\u5e03\u7a7a\u95f4\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "min": 1,
+                "max": 10,
+                "label": "anger",
+                "color": "#3700A4"
+            },
+            {
+                "min": 10,
+                "max": 20,
+                "label": "disgust",
+                "color": "#81AE9F"
+            },
+            {
+                "min": 20,
+                "max": 30,
+                "label": "fear",
+                "color": "#E2C568"
+            },
+            {
+                "min": 30,
+                "max": 40,
+                "label": "joy",
+                "color": "#FCF84D"
+            },
+            {
+                "min": 40,
+                "max": 50,
+                "label": "sadness",
+                "color": "#DD0200"
+            }
+        ]
+    },
+    "geo": {
+        "map": "\u5317\u4eac",
+        "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
+        "emphasis": {}
+    }
+};
+        chart_4fa471963e2d401283859111fe9c4678.setOption(option_4fa471963e2d401283859111fe9c4678);
+    </script>
+</body>
+</html>
